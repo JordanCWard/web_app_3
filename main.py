@@ -7,7 +7,7 @@ st.set_page_config(layout="wide")
 st.title("The Best Company")
 content = """
     kjhcjxzcjkxzvjksjckvnjkcxvlkcxjlkvc xclvjclkxvj cxkl vjlkcxjv lkcxjv lkcxjv klcxjklvj cxklv cxklvjk xcvkl
-    lksdhf lkdsjf kdsjf lkdsjf lkdsjf lkdsjflk dsjf ljdslfj pewo fj epowj fpocklx vjcxklv.
+    lksdhf lkdsjf kdsjf lkdsjf lkdsjf lkdsjflk.
     """
 
 st.write(content)
