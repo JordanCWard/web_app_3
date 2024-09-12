@@ -23,9 +23,10 @@ col_1, col_2, col_3, col_4, col_5, col_6 = st.columns([1.5, 0.5, 1.5, 0.5, 1.5, 
 data_file = pandas.read_csv("data.csv", sep=",")
 
 with col_1:
-    for index, row in data_file.iterrows():
+    for index, row in data_file[:4].iterrows():
 
-        st.write(f"({row['first name']} {row['last name']}")
+        st.write(f"{row['first name']} {row['last name']}".title())
+
         st.write(row["role"])
 
         """
@@ -38,11 +39,34 @@ with col_1:
         # st.write("[Source Code](https://pythonhow.com")
 
         # this adds links from the csv file in the url column
-        st.write(f"[Source Code]({row['url']})")
+        #st.write(f"[Source Code]({row['url']})")
+
+with col_3:
+    for index, row in data_file[4:8].iterrows():
 
 
+        st.write(f"{row['first name']} {row['last name']}".title())
 
+        st.write(row["role"])
 
+        """
+        the pics are in the images folder in this directory,
+        then we add the column from the csv file to create the full file name
+        """
+        st.image("images/" + row["image"])
+
+with col_5:
+    for index, row in data_file[8:].iterrows():
+
+        st.write(f"{row['first name']} {row['last name']}".title())
+
+        st.write(row["role"])
+
+        """
+        the pics are in the images folder in this directory,
+        then we add the column from the csv file to create the full file name
+        """
+        st.image("images/" + row["image"])
 
 
 
