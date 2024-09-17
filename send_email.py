@@ -9,7 +9,7 @@ def email_function(message):
     # Python Mega Course lecture 221 to set this up
     username = "jordancward@gmail.com"
 
-    # password is stored in environment variables
+    # password is stored in environment variables, must restart computer after updating it
     password = os.getenv("PASSWORD")
 
     receiver = "moveshhh8@gmail.com"
