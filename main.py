@@ -24,9 +24,7 @@ with col_1:
     for index, row in data_file[:4].iterrows():
 
         st.subheader(f"{row['first name']} {row['last name']}".title())
-
         st.write(row["role"])
-
         st.image("images/" + row["image"])
 
 
@@ -34,9 +32,7 @@ with col_3:
     for index, row in data_file[4:8].iterrows():
 
         st.subheader(f"{row['first name']} {row['last name']}".title())
-
         st.write(row["role"])
-
         st.image("images/" + row["image"])
 
 
@@ -44,9 +40,7 @@ with col_5:
     for index, row in data_file[8:].iterrows():
 
         st.subheader(f"{row['first name']} {row['last name']}".title())
-
         st.write(row["role"])
-
         st.image("images/" + row["image"])
 
 
