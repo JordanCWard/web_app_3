@@ -7,7 +7,7 @@ def email_function(message):
     port = 465
 
     # Python Mega Course lecture 221 to set this up
-    username = "jordancward@gmail.com"
+    username = "EMAIL"
 
     # password is stored in environment variables, must restart computer after updating it
     password = os.getenv("PASSWORD")
