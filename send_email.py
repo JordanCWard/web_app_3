@@ -1,4 +1,5 @@
 import smtplib
+import os
 
 
 def email_function(message):
@@ -7,7 +8,9 @@ def email_function(message):
 
     # Python Mega Course lecture 221 to set this up
     username = "jordancward@gmail.com"
-    password = "bzbaqtukldocffkd"
+
+    # password is stored in environment variables
+    password = os.getenv("PASSWORD")
 
     receiver = "moveshhh8@gmail.com"
 
